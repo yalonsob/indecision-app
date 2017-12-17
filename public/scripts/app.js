@@ -5,7 +5,7 @@ console.log('App.js is running...');
 var app = {
     title: 'Indecision App',
     subtitle: 'Put your life in the hands of a computer',
-    options: []
+    options: ['One', 'Two']
 };
 
 //JSX - JavaScript XML
@@ -25,7 +25,7 @@ var template = React.createElement(
     React.createElement(
         'p',
         null,
-        app.options && app.options.length > 0 ? 'Here are your options' : 'No option'
+        app.options && app.options.length > 0 ? 'Here are your options' : 'No options'
     ),
     React.createElement(
         'ol',
